@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "goeapi"
+description = "<div style=\"color:blue\"> <p> Please review the comprehensive summaries provided related to GOE Developer Hub’s available environments, servers, and authorization tokens.</p><p>Please be aware that using generic credentials will result in a set of generic portfolios provided for reference purposes. The portfolios displayed in this Developer Hub are for illustrative purposes only and must not be used in production environments or to provide actual investment advice. To request customized portfolios - you will need to have a profile set up in the GOE Admin Portal. To do this, please reach out to GOEsupport@frk.com.</p></div>"
+version = "0.1.0"
+dependencies = ["apimatic-core~=0.2.0, >= 0.2.24", "apimatic-core-interfaces~=0.1.0, >= 0.1.8", "apimatic-requests-client-adapter~=0.1.0, >= 0.1.10", "python-dotenv>=0.21, <2.0"]
+requires-python = ">=3.7"
+[[project.authors]]
+name = "APIMatic Code Generator"
+email = "support@apimatic.io"
+
+[project.optional-dependencies]
+testutils = ["pytest>=7.2.2"]
+[tool]
+[tool.setuptools]
+[tool.setuptools.packages]
+[tool.setuptools.packages.find]
+exclude = ["tests", "tests.*"]
